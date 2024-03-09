@@ -26,9 +26,9 @@ ufw enable
 ufw status
 ```
 ระบบจะแสดงผลดังต่อไปนี้
-`
+```
  To                         Action      From
  --                         ------      ----
  OpenSSH                    ALLOW       Anywhere
  OpenSSH (v6)               ALLOW       Anywhere (v6)
- `
+ ```
