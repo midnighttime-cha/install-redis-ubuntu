@@ -148,8 +148,10 @@ sudo nano /etc/redis/redis.conf
 ```
 จากนั้นเพิ่มคำสั่งสร้าง user และกำหนด password ตามจำนวนที่ต้องการ ในไฟล์ตามตัวอย่าง
 ```
+...
 user [YOUR USERNAME 2] +@all allkeys on >[YOUR PASSWORD 2]
 user [YOUR USERNAME 3] +@all -SET allkeys on >[YOUR PASSWORD 3]
+...
 ```
 
 3. ทำการ Restart service
@@ -168,19 +170,20 @@ redis-cli
 
 1. แก้ไขไฟล์ `/etc/redis/redis.conf` ด้วยคำสั่งต่อไปนี้
 ```
+...
 save 900 1
 save 300 10
 save 60 10000
-
+...
 appendonly yes
+...
+...
 appendfsync everysec
+...
 ```
 
 2. ทำการ Restart service
+
 ```
 sudo systemctl restart redis.service
 ```
-
-
-
-
