@@ -63,7 +63,7 @@ supervised systemd
 
 2. ทำการ Restart serve
 ```
-sudo systemctl retart redis.service
+sudo systemctl restart redis.service
 ```
 
 3. ทดสอบด้วยคำสั่ง
