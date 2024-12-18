@@ -184,7 +184,7 @@ appendfsync everysec
 2. ทำการ Restart service
 
 ```
-sudo systemctl restart redis.service
+sudo systemctl restart redis-server
 ```
 
 Credit: <a href="https://www.linode.com/docs/guides/install-redis-ubuntu/">Install and Configure Redis on Ubuntu 20.04</a>
