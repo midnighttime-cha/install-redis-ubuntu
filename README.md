@@ -63,7 +63,7 @@ supervised systemd
 
 2. ทำการ Restart serve
 ```
-sudo systemctl restart redis.service
+sudo systemctl restart redis-server
 ```
 
 3. ทดสอบด้วยคำสั่ง
@@ -111,7 +111,7 @@ requirepass [yourpassword]
 
 2. ทำการ Restart service ของ Redis
 ```
-sudo systemctl restart redis.service
+sudo systemctl restart redis-server
 ```
 
 3. เมื่อทดลองใช้คำสั่ง `redis-cli` และพิมพ์คำสั่ง `SET server:name "foo2"` ระบบจะแสดงตัวอย่างดังนี้
