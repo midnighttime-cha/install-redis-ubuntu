@@ -149,7 +149,7 @@ sudo nano /etc/redis/redis.conf
 ```
 ...
 user [YOUR USERNAME 2] +@all allkeys on >[YOUR PASSWORD 2]
-user [YOUR USERNAME 3] +@all -SET allkeys on >[YOUR PASSWORD 3]
+user [YOUR USERNAME 3] +@all +SET allkeys on >[YOUR PASSWORD 3]
 ...
 ```
 
